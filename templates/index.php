@@ -1,6 +1,10 @@
 <?php
     include'quiz/header.php'; 
 
+    if ($user == NULL) {
+      header('Location: login');
+    }
+
     $quizUser = $simple->getQuizUser($user->getId());
 
     $userScore = 0;
