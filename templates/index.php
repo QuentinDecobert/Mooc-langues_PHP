@@ -78,10 +78,14 @@
                   echo '<h4 class="list-group-item-heading">'. $categorie->name . '</h4>';
                   echo '<p class="list-group-item-text">'. $categorie->description . '</p>';
                   echo '</a>';
-                  foreach ($quizzes as $quiz) : 
+                  foreach ($quizzes as $quiz) :
                     if ($categorie->name == $quiz->category) {
                       echo '<a href="'.$root . '/quiz/' . $quiz->id .'" class="">';
                       
+                      if (!empty($quizUser)) {
+                        echo '<p class="list-group-item">'. $quiz->name . '</p>';
+                      }
+
                       foreach ($quizUser as $userQuizId) {
                         if ($userQuizId->quiz_id == $quiz->id) {
                           echo '<p class="list-group-item">'. $quiz->name . ' <span class="glyphicon glyphicon-ok text-right" aria-hidden="true"></span></p>';
