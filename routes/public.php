@@ -94,7 +94,7 @@ $app->post('/login/', function () use ($app) {
     }
     else
     {
-        $errors['loginerror'] = "Please check your email address and password and try again.";
+        $errors['loginerror'] = "Check ton email et ton mot de passe et réessaye.";
     }
 
     if (count($errors) > 0)
@@ -151,7 +151,7 @@ $app->post('/register/', function () use ($app) {
     }
     else
     {
-        $errors['registererror'] = "There was an error with your username or password. Please try again.";
+        $errors['registererror'] = "Il y a une erreur dans votre pseudo ou dans voytre mot de passe. Essayez encore.";
     }
 
     if (count($errors) > 0)
