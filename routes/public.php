@@ -6,7 +6,7 @@ $app->get('/', function () use ($app) {
 
     $session = $app->session;
 
-    $app->render('index.php', array('quizzes' => $quizzes, 'categories' => $categories, 'session' => $session));
+    $app->render('index.php', array('simple' => $simple, 'quizzes' => $quizzes, 'categories' => $categories, 'session' => $session));
 });
 
 $app->get('/requirements/', function () use ($app) {

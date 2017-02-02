@@ -7,6 +7,7 @@ use SimpleQuiz\Utils\Base\User;
 class EndUser extends User {
 
     private $quizzes;
+    private $score;
 
     function __construct($email, $name)
     {
@@ -26,6 +27,6 @@ class EndUser extends User {
     
     public function getScore($quizid)
     {
-
+        return $this->score;
     }
 }
