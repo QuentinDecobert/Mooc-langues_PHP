@@ -82,7 +82,7 @@
                     if ($categorie->name == $quiz->category) {
                       echo '<a href="'.$root . '/quiz/' . $quiz->id .'" class="">';
                       
-                      if (!empty($quizUser)) {
+                      if (count($quizUser) == 0) {
                         echo '<p class="list-group-item">'. $quiz->name . '</p>';
                       }
 
