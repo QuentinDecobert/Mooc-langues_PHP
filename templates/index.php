@@ -1,6 +1,12 @@
 <?php
-    include'quiz/header.php';
+    include'quiz/header.php'; 
+
+    if ($user == NULL) {
+      header('Location: login');
+    }
+
     $quizUser = $simple->getQuizUser($user->getId());
+    $numAllEx = count($simple->getQuizzes());
 
     $userScore = 0;
     foreach ($quizUser as $score) {
@@ -58,7 +64,7 @@
               <h4>Exercices terminés</h4>
               <h4>
                 <?php
-                  echo $userNumEx;
+                  echo $userNumEx." sur ".$numAllEx
                 ?> 
               </h4>
             </div>
@@ -73,10 +79,14 @@
                   echo '<h4 class="list-group-item-heading">'. $categorie->name . '</h4>';
                   echo '<p class="list-group-item-text">'. $categorie->description . '</p>';
                   echo '</a>';
-                  foreach ($quizzes as $quiz) : 
+                  foreach ($quizzes as $quiz) :
                     if ($categorie->name == $quiz->category) {
                       echo '<a href="'.$root . '/quiz/' . $quiz->id .'" class="">';
                       
+                      if (count($quizUser) == 0) {
+                        echo '<p class="list-group-item">'. $quiz->name . '</p>';
+                      }
+
                       foreach ($quizUser as $userQuizId) {
                         if ($userQuizId->quiz_id == $quiz->id) {
                           echo '<p class="list-group-item">'. $quiz->name . ' <span class="glyphicon glyphicon-ok text-right" aria-hidden="true"></span></p>';
