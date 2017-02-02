@@ -86,15 +86,13 @@
                       if (count($quizUser) == 0) {
                         echo '<p class="list-group-item">'. $quiz->name . '</p>';
                       }
-
+                      echo '<p class="list-group-item">'. $quiz->name ;
                       foreach ($quizUser as $userQuizId) {
                         if ($userQuizId->quiz_id == $quiz->id) {
-                          echo '<p class="list-group-item">'. $quiz->name . ' <span class="glyphicon glyphicon-ok text-right" aria-hidden="true"></span></p>';
-                        }
-                        else{
-                          echo '<p class="list-group-item">'. $quiz->name . '</p>';
+                          echo ' <span class="glyphicon glyphicon-ok text-right" aria-hidden="true"></span>';
                         }
                       }
+                      echo "</p>";
                       //echo '<p class="list-group-item-text">'. $quiz->description . '</p>';
                       echo '</a>';
                     }
