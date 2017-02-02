@@ -1,0 +1,67 @@
+html {
+	height: 100%;
+
+	.body-langues {
+		background-image: url(../images/img_bg_langues.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 25vh;
+		height: 75vh;
+	
+		.page-langue {
+			width: 50vw;
+			max-width: 500px;
+			margin: auto;
+			background-color: white;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+	    	-moz-box-shadow: 0 8px 6px -6px black;
+	    	box-shadow: 0 8px 6px -6px black;
+	    	font-family: "Roboto Light";
+	    	font-weight: 100;
+	
+	    	.page-langue-header {
+	    		height: 20px;
+	    		background-color: $blue-cat-5;
+	    	}
+		
+			.titre-langue {
+				text-align: center;
+				margin: 0;
+				color: $grey-subtitle;
+				padding-top: 5vh;
+		
+				span {
+					color: $blue-cat-1;
+				}
+			}
+			
+			.langues {
+				padding: 10px 0;
+		
+				li {
+					list-style-type: none;
+					text-align: center;
+					width: 200px;
+					margin: 30px auto;
+					border-radius: 25px;
+					background-color: $blue-badge;
+		
+					a {
+						color: white;
+						text-decoration: none;
+		
+						h2 {
+							margin: 0;
+							padding: 10px 0;
+							font-family: "Roboto Regular";
+							text-transform: uppercase;
+    						font-size: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
