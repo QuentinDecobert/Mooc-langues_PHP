@@ -52,6 +52,16 @@ class Simple implements Base\ISimple {
         }
         return $quizzes;
     }
+
+    public function getUserScore($userid) {
+
+        $scores = \ORM::for_table('quiz_users')->where('user_id', $userid)->find_many();
+        $scoreTotal = 0;
+        foreach ($scores as $score) {
+            $scoreTotal = $scoreTotal + $score->score;
+        }
+        return $scoreTotal;
+    }
     
     public function getCategories($active = true) {
         if ($active) {
@@ -150,4 +160,5 @@ class Simple implements Base\ISimple {
             $app->redirect($app->request->getRootUri() . '/');
         }
     }
+
 }
