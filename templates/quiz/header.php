@@ -61,7 +61,7 @@ $title = isset($quiz) ? 'Simple Quiz :: ' . $quiz->getName() : 'Simple Quiz';
         <div class="vertical-menu" id="menu">
             <div class="logo">
                 <div class="logo-img">
-                    <img src="<?php echo $root; ?>/images/logo.png" alt="">
+                    <img src="<?php echo $root; ?>/res/images/logo.png" alt="">
                 </div>
                 <div class="logo-text">
                     <h1>Wavy</h1>
@@ -90,10 +90,10 @@ $title = isset($quiz) ? 'Simple Quiz :: ' . $quiz->getName() : 'Simple Quiz';
 
         <div class="horizontal-menu">
             <div id="burger-open">
-                <img src="<?php echo $root; ?>/images/menu-burger.png" alt="">
+                <img src="<?php echo $root; ?>/res/images/menu-burger.png" alt="">
             </div>
-            <div id="burger-close"">
-            <img src="<?php echo $root; ?>/images/menu-burger.png" alt="">
+            <div id="burger-close">
+            <img src="<?php echo $root; ?>/res/images/menu-burger.png" alt="">
         </div>
 
         <!--<div class="score-user">

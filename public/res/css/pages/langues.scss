@@ -1,15 +1,15 @@
 html {
 	height: 100%;
 
-	.body-langues {
+	#body-login {
 		background-image: url(../images/img_bg_langues.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding-top: 25vh;
+		padding-top: 10vh;
 		height: 75vh;
 	
-		.page-langue {
+		.page-login {
 			width: 50vw;
 			max-width: 500px;
 			margin: auto;
@@ -20,12 +20,26 @@ html {
 	    	font-family: "Roboto Light";
 	    	font-weight: 100;
 	
-	    	.page-langue-header {
-	    		height: 20px;
+	    	.page-login-header {
+	    		height: 10px;
 	    		background-color: $blue-cat-5;
+
+	    		button, p {
+	    			width: 20%!important;
+	    			display: inline-block;
+	    			float: right;
+	    		}
+
+	    		p button {
+	    			width: 100%!important;
+	    			display: block;
+	    			float: right;
+	    		}
+
+
 	    	}
 		
-			.titre-langue {
+			.titre-login {
 				text-align: center;
 				margin: 0;
 				color: $grey-subtitle;
@@ -36,7 +50,7 @@ html {
 				}
 			}
 			
-			.langues {
+			.login {
 				padding: 10px 0;
 		
 				li {

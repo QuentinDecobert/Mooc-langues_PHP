@@ -176,14 +176,14 @@ body {
 
 html {
   height: 100%; }
-  html .body-langues {
+  html #body-login {
     background-image: url(../images/img_bg_langues.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 25vh;
+    padding-top: 10vh;
     height: 75vh; }
-    html .body-langues .page-langue {
+    html #body-login .page-login {
       width: 50vw;
       max-width: 500px;
       margin: auto;
@@ -193,29 +193,37 @@ html {
       box-shadow: 0 8px 6px -6px black;
       font-family: "Roboto Light";
       font-weight: 100; }
-      html .body-langues .page-langue .page-langue-header {
-        height: 20px;
+      html #body-login .page-login .page-login-header {
+        height: 10px;
         background-color: #25396e; }
-      html .body-langues .page-langue .titre-langue {
+        html #body-login .page-login .page-login-header button, html #body-login .page-login .page-login-header p {
+          width: 20% !important;
+          display: inline-block;
+          float: right; }
+        html #body-login .page-login .page-login-header p button {
+          width: 100% !important;
+          display: block;
+          float: right; }
+      html #body-login .page-login .titre-login {
         text-align: center;
         margin: 0;
         color: #8492af;
         padding-top: 5vh; }
-        html .body-langues .page-langue .titre-langue span {
+        html #body-login .page-login .titre-login span {
           color: #5584ff; }
-      html .body-langues .page-langue .langues {
+      html #body-login .page-login .login {
         padding: 10px 0; }
-        html .body-langues .page-langue .langues li {
+        html #body-login .page-login .login li {
           list-style-type: none;
           text-align: center;
           width: 200px;
           margin: 30px auto;
           border-radius: 25px;
           background-color: #5384ff; }
-          html .body-langues .page-langue .langues li a {
+          html #body-login .page-login .login li a {
             color: white;
             text-decoration: none; }
-            html .body-langues .page-langue .langues li a h2 {
+            html #body-login .page-login .login li a h2 {
               margin: 0;
               padding: 10px 0;
               font-family: "Roboto Regular";
@@ -224,5 +232,89 @@ html {
 
 html {
   background-image: none; }
+
+#body-login .message-error {
+  margin-bottom: 0;
+  background-color: #f6f7fa;
+  opacity: 0.4; }
+#body-login #container-login-register {
+  background-color: #f6f7fa;
+  padding: 0;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  font-family: "Roboto Light"; }
+  #body-login #container-login-register .form-signin {
+    max-width: none;
+    padding: 0; }
+    #body-login #container-login-register .form-signin .bouton-login-register {
+      height: 70px;
+      background-color: #25396e; }
+      #body-login #container-login-register .form-signin .bouton-login-register p {
+        width: 100px;
+        float: right;
+        display: inline-block;
+        margin: 0;
+        height: 100%; }
+        #body-login #container-login-register .form-signin .bouton-login-register p button {
+          width: 100%;
+          background-color: transparent;
+          border-color: transparent;
+          color: white;
+          height: 100%; }
+      #body-login #container-login-register .form-signin .bouton-login-register button {
+        width: 100px;
+        float: right;
+        display: inline-block;
+        background-color: transparent;
+        border-color: transparent;
+        color: white;
+        height: 100%;
+        margin-right: 20px; }
+        #body-login #container-login-register .form-signin .bouton-login-register button:focus {
+          outline: none;
+          border-color: transparent;
+          -webkit-box-shadow: none;
+          box-shadow: none; }
+        #body-login #container-login-register .form-signin .bouton-login-register button:after {
+          content: "";
+          display: block;
+          background-color: transparent;
+          height: 6px;
+          width: 100px;
+          position: absolute;
+          top: 64px; }
+        #body-login #container-login-register .form-signin .bouton-login-register button:hover:after {
+          background-color: #5384ff; }
+    #body-login #container-login-register .form-signin .champs-login-register {
+      width: 50%;
+      margin: 100px auto; }
+      #body-login #container-login-register .form-signin .champs-login-register input {
+        background-color: #f6f7fa;
+        outline: none;
+        border-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 0 !important;
+        border-bottom: 1px solid #d4d9e3; }
+        #body-login #container-login-register .form-signin .champs-login-register input:focus {
+          outline: none;
+          border-color: transparent;
+          -webkit-box-shadow: none;
+          box-shadow: none; }
+        #body-login #container-login-register .form-signin .champs-login-register input:nth-child(2) {
+          margin-top: 20px; }
+    #body-login #container-login-register .form-signin .just-button button {
+      list-style-type: none;
+      text-align: center;
+      width: 200px;
+      margin: 30px auto;
+      border-radius: 25px;
+      background-color: #5384ff;
+      border: none;
+      outline: none;
+      border-color: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */
