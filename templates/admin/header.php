@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo $root; ?>/">Simple Quiz</a>
+          <a class="navbar-brand" href="<?php echo $root; ?>/">Wavy</a>
         </div>
         <div class="navbar-collapse collapse">
             
@@ -31,14 +31,14 @@
             <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="<?php echo $root; ?>/admin/">All Quizzes</a></li>
-                    <li class="disabled"><a href="<?php echo $root; ?>/admin/config/">Settings</a></li>
-                    <li class="disabled"><a href="<?php echo $root; ?>/admin/edit/">Change Password</a></li>
+                    <li><a href="<?php echo $root; ?>/admin/">Les Quizz</a></li>
+                    <li class="disabled"><a href="<?php echo $root; ?>/admin/config/">Paramètres</a></li>
+                    <li class="disabled"><a href="<?php echo $root; ?>/admin/edit/">Changer de mot de passe</a></li>
                     <li><a href="<?php echo $root; ?>/logout/">Logout</a></li>
                 </ul>
             </li>
           </ul>
-            <p class="signed navbar-text pull-right"><span class="glyphicon glyphicon-user"></span> Signed in as
+            <p class="signed navbar-text pull-right"><span class="glyphicon glyphicon-user"></span> Identifié comme
                 <strong><?php echo $user->getName(); ?></strong></p>
         </div><!--/.nav-collapse -->
       </div>

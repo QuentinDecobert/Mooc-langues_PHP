@@ -1,5 +1,5 @@
 <?php
-$title = isset($quiz) ? 'Simple Quiz :: ' . $quiz->getName() : 'Simple Quiz';
+$title = isset($quiz) ? 'Mooc Langues :: ' . $quiz->getName() : 'Mooc Langues';
 ?>
 <!DOCTYPE html>
 <html>
@@ -94,7 +94,6 @@ $title = isset($quiz) ? 'Simple Quiz :: ' . $quiz->getName() : 'Simple Quiz';
             </div>
             <div id="burger-close">
             <img src="<?php echo $root; ?>/res/images/menu-burger.png" alt="">
-            <img src="<?php echo $root; ?>/res/images/menu-burger.png" alt=" ">
         </div>
 
         <!--<div class="score-user">
@@ -113,17 +112,21 @@ $title = isset($quiz) ? 'Simple Quiz :: ' . $quiz->getName() : 'Simple Quiz';
 
         <ul class="nav navbar-nav navbar-right">
             <?php if ($user): ?>
-                <li><a href="<?php echo $root; ?>/logout/">Logout</a></li>
+                <li><a href="<?php echo $root; ?>/logout/">Déconnexion</a></li>
                 <?php if($user->isAdmin()) :?>
                     <li><a href="<?php echo $root; ?>/admin/">Admin</a></li>
                 <?php endif; ?>
             <?php else : ?>
-                <li><a href="<?php echo $root; ?>/login/">Login</a></li>
+                <li><a href="<?php echo $root; ?>/login/">Connexion</a></li>
             <?php endif; ?>
         </ul>
         <?php if ($user) : ?>
-            <p class="signed navbar-text pull-right"><span class="glyphicon glyphicon-user"></span> Signed in as
-                <strong><?php echo $user->getName(); ?></strong></p>
+            <p class="signed navbar-text pull-right">
+                <!-- <span id="img-user"></span> -->
+                <?php $test = rand(1, 6); ?>
+                    <img id="img-user" src="<?php echo $root; ?>/res/images/img-user-<?php echo $test ?>.png" alt="">
+                    <strong><?php echo $user->getName(); ?></strong>
+            </p>
         <?php endif; ?>
     </header>
 
