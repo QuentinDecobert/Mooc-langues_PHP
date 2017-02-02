@@ -53,14 +53,10 @@ class Simple implements Base\ISimple {
         return $quizzes;
     }
 
-    public function getUserScore($userid) {
+    public function getQuizUser($userid) {
 
-        $scores = \ORM::for_table('quiz_users')->where('user_id', $userid)->find_many();
-        $scoreTotal = 0;
-        foreach ($scores as $score) {
-            $scoreTotal = $scoreTotal + $score->score;
-        }
-        return $scoreTotal;
+        $quizUser = \ORM::for_table('quiz_users')->where('user_id', $userid)->find_many();
+        return $quizUser;
     }
     
     public function getCategories($active = true) {
