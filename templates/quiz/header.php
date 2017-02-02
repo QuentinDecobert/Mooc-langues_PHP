@@ -94,6 +94,7 @@ $title = isset($quiz) ? 'Simple Quiz :: ' . $quiz->getName() : 'Simple Quiz';
             </div>
             <div id="burger-close">
             <img src="<?php echo $root; ?>/res/images/menu-burger.png" alt="">
+            <img src="<?php echo $root; ?>/res/images/menu-burger.png" alt=" ">
         </div>
 
         <!--<div class="score-user">
