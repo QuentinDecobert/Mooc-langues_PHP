@@ -10,12 +10,12 @@
                   .'</div>'; } ?>
           <h2><?php echo $quiz->getName(); ?></h2>
           <h4><?php echo $quiz->getDescription(); ?></h4>
-          <p>Once you have started the quiz, you must answer all of the questions. If you try to go back to the previous question, your score will be reset and you will be sent back to the start.</p>
-          <p>For each question, choose an answer and click <strong>'Submit Answer'</strong>. You'll then be given the next question.</p>
-          <p>This quiz has <strong><?php echo $numquestions; ?></strong> questions.</p>
-          <p>You'll get your score at the end of the quiz.</p>
+          <p>Une fois que vous avez commencé le quiz, vous devez répondre à toutes les questions. Si vous essayez de revenir à la question précédente, votre score sera réinitialisé et vous serez renvoyé au début.</p>
+          <p>Pour chaque question, choisissez une réponse et cliquez sur <strong>'Valider'</strong>. La question suivante vous sera alors posée.</p>
+          <p>Cet exercice a <strong><?php echo $numquestions; ?></strong> questions.</p>
+          <p>Vous obtiendrez votre score à la fin du quiz.</p>
           <div id="leaders-score">
-                <h4>Top <?php echo $leadersToShow; ?> Scorers</h4>
+                <h4>Top <?php echo $leadersToShow; ?></h4>
                 <div class="row">
                     <ul class="leaders col-md-6">
                         <?php

@@ -2,7 +2,7 @@
 <div id="container" class="quiz with-menu">
         <div class="row">
             <div class="col-md-5 col-md-offset-2">
-                <h2>The Results Page For <span><?php echo $user->getName();  ?></span></h2>
+                <h2>Le résultat de <span><?php echo $user->getName();  ?></span></h2>
             <?php
             $x = 1;
             $numquestions = $quiz->countQuestions();
@@ -49,7 +49,7 @@
             endforeach; ?>
             </div>
             <div class="col-md-3">   
-                <h2>Top Scorers</h2>
+                <h2>Meilleurs Scores</h2>
                 <ul class="leaders">
                     <?php
                     $leaders = $quiz->getLeaders(30);
