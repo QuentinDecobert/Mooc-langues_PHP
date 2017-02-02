@@ -1,6 +1,5 @@
 <?php
-    include'quiz/header.php'; 
-
+    include'quiz/header.php';
     $quizUser = $simple->getQuizUser($user->getId());
 
     $userScore = 0;
@@ -28,7 +27,7 @@
           </p>
           <div class="jumbotron">
             <h2>Hello <?php echo $user->getName(); ?> !</h2>
-            <p>A simple framework for creating and displaying quizzes. Written in PHP.</p>
+            <p>Apprendre l'anglais avec Wavy n'a jamais été aussi simple.</p>
           </div>
         </div><!--/span-->
         </div><!--/row-->
