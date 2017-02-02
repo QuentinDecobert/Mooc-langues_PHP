@@ -6,6 +6,7 @@
     }
 
     $quizUser = $simple->getQuizUser($user->getId());
+    $numAllEx = count($simple->getQuizzes());
 
     $userScore = 0;
     foreach ($quizUser as $score) {
@@ -63,7 +64,7 @@
               <h4>Exercices terminés</h4>
               <h4>
                 <?php
-                  echo $userNumEx;
+                  echo $userNumEx." sur ".$numAllEx
                 ?> 
               </h4>
             </div>
