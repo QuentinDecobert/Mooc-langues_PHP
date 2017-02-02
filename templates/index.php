@@ -83,9 +83,6 @@
                     if ($categorie->name == $quiz->category) {
                       echo '<a href="'.$root . '/quiz/' . $quiz->id .'" class="">';
                       
-                      if (count($quizUser) == 0) {
-                        echo '<p class="list-group-item">'. $quiz->name . '</p>';
-                      }
                       echo '<p class="list-group-item">'. $quiz->name ;
                       foreach ($quizUser as $userQuizId) {
                         if ($userQuizId->quiz_id == $quiz->id) {
