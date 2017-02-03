@@ -2,13 +2,19 @@ Mooc-langues_PHP
 ================
 
 Installation
---------------
+------------
 
 * Clone the repo: `git clone https://github.com/QuentinDecobert/Mooc-langues_PHP.git`.
 
-* Create a MySQL database called 'simple-quiz'
-* Import bad_mooc.sql into MySQL
+* Create a MySQL database called 'simple-quiz'.
+* Import bad_mooc.sql into MySQL.
 
-* Run 'composer update'
+* Run 'composer update' and accept all dependencies.
 
-Web admin par default example@gmail.com mot de passe : 123456
+**Login admin**
+email : example@gmail.com
+password : 123456
+
+**View URL**
+localhost/Mooc-langues_PHP/public/
+localhost:8888/Mooc-langues_PHP/public/
