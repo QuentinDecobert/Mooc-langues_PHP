@@ -6,7 +6,7 @@
 * Create a MySQL database called 'simple-quiz'.
 * Import bad_mooc.sql into MySQL.
 
-* Run 'composer update' and accept all dependencies.
+* Run `composer update` and accept all dependencies.
 
 ###Login admin
 * email : example@gmail.com
@@ -14,4 +14,3 @@
 
 ###View URL
 * localhost/Mooc-langues_PHP/public/
-* localhost:8888/Mooc-langues_PHP/public/
