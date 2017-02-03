@@ -253,7 +253,7 @@ body {
 #questionBox .list {
   padding: .5em 1em;
   margin: .5em .5em 2em .5em;
-  border-left: 0.1875em solid #16a085;
+  border-left: 0.1875em solid #5384ff;
   list-style-type: none; }
 #questionBox .list__item {
   margin: 0 0 .5em 0;
@@ -284,7 +284,7 @@ body {
   z-index: 1;
   width: 1em;
   height: 1em;
-  background: #16a085;
+  background: #5384ff;
   border-radius: 50%; }
 #questionBox .radio:checked:before {
   -webkit-transform: scale(1, 1);
