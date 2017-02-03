@@ -8,10 +8,10 @@
 
 * Run 'composer update' and accept all dependencies.
 
-##Login admin
+###Login admin
 * email : example@gmail.com
 * password : 123456
 
-##View URL
+###View URL
 * localhost/Mooc-langues_PHP/public/
 * localhost:8888/Mooc-langues_PHP/public/
